@@ -1,1 +1,1 @@
-export { Box } from './Components/Box';
+export { PintrestLayout } from './Components/PintrestLayout';

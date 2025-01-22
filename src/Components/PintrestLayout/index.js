@@ -1,0 +1,1 @@
+export { PintrestLayout } from './PintrestLayout';
