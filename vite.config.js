@@ -12,7 +12,11 @@ export default defineConfig({
       formats: ['es', 'cjs'], // Generate ES and CommonJS formats
     },
     rollupOptions: {
-      external: Object.keys(peerDependencies), // Mark peer dependencies as external
+      external: [
+        ...Object.keys(peerDependencies), // Mark peer dependencies as external
+        'react', // Explicitly mark react as external
+        'react-dom' // Explicitly mark react-dom as external
+      ],
       output: {
         globals: {
           react: 'React',
