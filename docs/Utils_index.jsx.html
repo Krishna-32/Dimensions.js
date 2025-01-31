@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: Utils/index.jsx</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,28 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: Utils/index.jsx</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import clsx from "clsx"; 
+import { twMerge } from "tailwind-merge";
 
-
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+/**
+ * Merges class names using the clsx library
+ * 
+ * @param {Array&lt;string|Object|boolean>} classes - The class values to merge
+ * @returns {string} Merged class names
+ */
+export const cn = (...classes) => twMerge(clsx(classes));
+</code></pre>
+        </article>
+    </section>
 
 
 
