@@ -170,7 +170,7 @@
     
 
     
-    <h4 class="name" id="AnimatedLine"><span class="type-signature"></span>AnimatedLine<span class="signature">()</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    <h4 class="name" id="AnimatedLine"><span class="type-signature"></span>AnimatedLine<span class="signature">(props)</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
     
 
     
@@ -190,6 +190,124 @@ The line smoothly animates back to its original straight position when the mouse
 
 
 
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>props</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>strokeColor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "#d5d4d3"
+                
+                </td>
+            
+
+            <td class="description last"><p>The color of the line stroke</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -225,7 +343,7 @@ The line smoothly animates back to its original straight position when the mouse
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Components_AnimatedLine_AnimatedLine.jsx.html">Components/AnimatedLine/AnimatedLine.jsx</a>, <a href="Components_AnimatedLine_AnimatedLine.jsx.html#line18">line 18</a>
+        <a href="Components_AnimatedLine_AnimatedLine.jsx.html">Components/AnimatedLine/AnimatedLine.jsx</a>, <a href="Components_AnimatedLine_AnimatedLine.jsx.html#line24">line 24</a>
     </li></ul></dd>
     
 
@@ -278,7 +396,785 @@ The line smoothly animates back to its original straight position when the mouse
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>// Basic usage&lt;AnimatedLine /></code></pre>
+    <pre class="prettyprint"><code>// Basic usage&lt;AnimatedLine />// With custom stroke color&lt;AnimatedLine strokeColor="#ff0000" /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="GooglyEyes"><span class="type-signature"></span>GooglyEyes<span class="signature">(props)</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>A component that renders a pair of googly eyes that track mouse movement</p>
+<p>The eyes consist of white scleras with black pupils that follow the mouse cursor.
+The pupils move realistically within the eye bounds based on mouse position.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>props</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>eyeSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "150px"
+                
+                </td>
+            
+
+            <td class="description last"><p>The width and height of each eye</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>eyeColor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "white"
+                
+                </td>
+            
+
+            <td class="description last"><p>The background color of the eye sclera</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pupilSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "60px"
+                
+                </td>
+            
+
+            <td class="description last"><p>The width and height of each pupil</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pupilColor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "black"
+                
+                </td>
+            
+
+            <td class="description last"><p>The color of the pupils</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>borderWidth</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "2px"
+                
+                </td>
+            
+
+            <td class="description last"><p>The width of the eye border</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>borderColor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "black"
+                
+                </td>
+            
+
+            <td class="description last"><p>The color of the eye border</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>eyeGap</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "2rem"
+                
+                </td>
+            
+
+            <td class="description last"><p>The spacing between the two eyes</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Components_GooglyEyes_GooglyEyes.jsx.html">Components/GooglyEyes/GooglyEyes.jsx</a>, <a href="Components_GooglyEyes_GooglyEyes.jsx.html#line37">line 37</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>A div containing two interactive googly eyes</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Basic usage with default props&lt;GooglyEyes />// Custom styling&lt;GooglyEyes   eyeSize="200px"  eyeColor="lightblue"  pupilSize="80px"  pupilColor="darkblue"  borderWidth="4px"  borderColor="#000"  eyeGap="3rem"/></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="Marquee"><span class="type-signature"></span>Marquee<span class="signature">(props)</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>A component that creates an animated marquee/ticker effect with text</p>
+<p>The text scrolls horizontally in a continuous loop at a specified speed.
+The animation pauses when the marquee is not visible in the viewport.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>props</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>text</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>The text content to display in the marquee</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>speed</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    50
+                
+                </td>
+            
+
+            <td class="description last"><p>The scrolling speed in pixels per second</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>gap</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "2rem"
+                
+                </td>
+            
+
+            <td class="description last"><p>The spacing between repeated text elements</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Components_Marquee_Marquee.jsx.html">Components/Marquee/Marquee.jsx</a>, <a href="Components_Marquee_Marquee.jsx.html#line30">line 30</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>A div containing the scrolling marquee text</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Basic usage&lt;Marquee text="Scrolling text here" />// Custom speed and gap&lt;Marquee   text="Custom marquee"  speed={100}  gap="3rem"/></code></pre>
 
 
 
@@ -1152,7 +2048,7 @@ Each character of the text is randomly changed before settling on the original t
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#AnimatedLine">AnimatedLine</a></li><li><a href="global.html#PintrestLayout">PintrestLayout</a></li><li><a href="global.html#SmoothScroll">SmoothScroll</a></li><li><a href="global.html#TextRandomizer">TextRandomizer</a></li><li><a href="global.html#cn">cn</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#AnimatedLine">AnimatedLine</a></li><li><a href="global.html#GooglyEyes">GooglyEyes</a></li><li><a href="global.html#Marquee">Marquee</a></li><li><a href="global.html#PintrestLayout">PintrestLayout</a></li><li><a href="global.html#SmoothScroll">SmoothScroll</a></li><li><a href="global.html#TextRandomizer">TextRandomizer</a></li><li><a href="global.html#cn">cn</a></li></ul>
 </nav>
 
 <br class="clear">
