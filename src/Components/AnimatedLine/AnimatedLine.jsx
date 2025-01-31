@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { gsap } from "gsap";
+import PropTypes from 'prop-types';
 
 /**
  * A component that renders an animated line that responds to mouse movement
@@ -79,5 +80,9 @@ function AnimatedLine({ strokeColor = "#d5d4d3" }) {
     </div>
   );
 }
+
+AnimatedLine.propTypes = {
+  strokeColor: PropTypes.string
+};
 
 export { AnimatedLine };
