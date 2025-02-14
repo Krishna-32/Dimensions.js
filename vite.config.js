@@ -15,7 +15,7 @@ export default defineConfig({
       external: [
         ...Object.keys(peerDependencies), // Mark peer dependencies as external
         'react', // Explicitly mark react as external
-        'react-dom' // Explicitly mark react-dom as external
+        'react-dom', // Explicitly mark react-dom as external
       ],
       output: {
         globals: {
