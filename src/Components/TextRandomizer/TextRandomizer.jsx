@@ -55,7 +55,7 @@ const TextRandomizer = ({ children }) => {
 
   return (
     <h1
-      className="animated-text cursor-pointer inline-block"
+      className="animated-text cursor-pointer inline-block uppercase"
       onMouseOver={handleMouseOver}
       data-value={text}
     >

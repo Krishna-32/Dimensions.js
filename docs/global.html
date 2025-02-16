@@ -1824,6 +1824,383 @@ Items avoid breaking across columns and maintain their aspect ratio.</p>
     
 
     
+    <h4 class="name" id="TextHover"><span class="type-signature"></span>TextHover<span class="signature">(props)</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>TextHover component that displays two text elements with a hoverable image between them</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>props</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Component props</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>t1</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>Text to display on the left side</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>t2</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>Text to display on the right side</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>img</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>URL of the image to display in the center</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>textColor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "#000000"
+                
+                </td>
+            
+
+            <td class="description last"><p>Color of the text</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>borderColor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "#000000"
+                
+                </td>
+            
+
+            <td class="description last"><p>Color of the bottom border</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Components_TextHover_TextHover.jsx.html">Components/TextHover/TextHover.jsx</a>, <a href="Components_TextHover_TextHover.jsx.html#line30">line 30</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>TextHover component</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Basic usage&lt;TextHover   t1="Hello"  t2="World"  img="/path/to/image.jpg"/>// With custom colors&lt;TextHover  t1="Left Text"  t2="Right Text"  img="/path/to/image.jpg"  textColor="#FF0000"  borderColor="#0000FF"/></code></pre>
+
+
+
+        
+            
+
+    
+
+    
     <h4 class="name" id="TextRandomizer"><span class="type-signature"></span>TextRandomizer<span class="signature">(props)</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
     
 
@@ -2048,7 +2425,7 @@ Each character of the text is randomly changed before settling on the original t
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#AnimatedLine">AnimatedLine</a></li><li><a href="global.html#GooglyEyes">GooglyEyes</a></li><li><a href="global.html#Marquee">Marquee</a></li><li><a href="global.html#PintrestLayout">PintrestLayout</a></li><li><a href="global.html#SmoothScroll">SmoothScroll</a></li><li><a href="global.html#TextRandomizer">TextRandomizer</a></li><li><a href="global.html#cn">cn</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#AnimatedLine">AnimatedLine</a></li><li><a href="global.html#GooglyEyes">GooglyEyes</a></li><li><a href="global.html#Marquee">Marquee</a></li><li><a href="global.html#PintrestLayout">PintrestLayout</a></li><li><a href="global.html#SmoothScroll">SmoothScroll</a></li><li><a href="global.html#TextHover">TextHover</a></li><li><a href="global.html#TextRandomizer">TextRandomizer</a></li><li><a href="global.html#cn">cn</a></li></ul>
 </nav>
 
 <br class="clear">
