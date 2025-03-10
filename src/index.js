@@ -5,3 +5,4 @@ export { AnimatedLine } from './Components/AnimatedLine';
 export { GooglyEyes } from './Components/GooglyEyes';
 export { Marquee } from './Components/Marquee'; 
 export { TextHover } from './Components/TextHover';
+export { InfiniteTextMenu } from './Components/InfiniteTextMenu';

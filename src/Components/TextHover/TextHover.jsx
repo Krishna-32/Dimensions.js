@@ -154,6 +154,7 @@ TextHover.propTypes = {
 TextHover.defaultProps = {
   textColor: "#000000",
   borderColor: "#000000",
+  t1: "",
   t2: ""
 };
 
