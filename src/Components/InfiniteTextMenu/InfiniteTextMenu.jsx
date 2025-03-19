@@ -16,6 +16,8 @@ import PropTypes from "prop-types";
  * @param {string} [props.bgImage=""] - URL of the background image
  * @param {string} [props.subtitleColor="#999"] - Color of the subtitle text
  * @param {string} [props.titleColor="#fff"] - Color of the title text
+ * @param {string} [props.width="100vw"] - Width of the menu container
+ * @param {string} [props.height="100vh"] - Height of the menu container
  * @returns {JSX.Element} A div containing the infinite scrolling menu
  * 
  * @example
@@ -26,14 +28,18 @@ import PropTypes from "prop-types";
  *   bgImage="/background.jpg"
  *   subtitleColor="#999"
  *   titleColor="#fff"
+ *   width="100vw"
+ *   height="100vh"
  * />
  */
 const InfiniteTextMenu = ({
-  subtitle ,
-  title,
-  bgImage,
-  subtitleColor,
-  titleColor,
+  subtitle = [],
+  title = [],
+  bgImage = "",
+  subtitleColor = "#999",
+  titleColor = "#fff", 
+  width = "100vw",
+  height = "100vh",
 }) => {
   useEffect(() => {
     const menuElement = document.querySelector(".menu");
@@ -131,8 +137,8 @@ const InfiniteTextMenu = ({
       <style>
         {`
           .menu-container {
-            width: 100vw;
-            height: 100vh;
+            width: ${width};
+            height: ${height};
             overflow: hidden;
             background: #000;
             color: #fff;
@@ -208,7 +214,6 @@ const InfiniteTextMenu = ({
             user-select: none;
           }
           @media (max-width: 768px) {
-
             .item-category p {
               font-size: 40px;
             }
@@ -224,7 +229,6 @@ const InfiniteTextMenu = ({
             .item-name p {
               font-size: 60px;
             }
-        
           }
         `}
       </style>
@@ -254,8 +258,9 @@ InfiniteTextMenu.propTypes = {
   title: PropTypes.arrayOf(PropTypes.string),
   bgImage: PropTypes.string,
   subtitleColor: PropTypes.string,
-  titleColor: PropTypes.string
+  titleColor: PropTypes.string,
+  width: PropTypes.string,
+  height: PropTypes.string,
 };
-
 
 export { InfiniteTextMenu };
