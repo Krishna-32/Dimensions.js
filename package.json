@@ -1,7 +1,24 @@
 {
-  "name": "dimensions-js",
-  "private": true,
-  "version": "0.0.0",
+  "name": "dimension-js",
+  "private": false,
+  "version": "0.0.3",
+  "description": "Dimension is a react library",
+  "author": "Krishna Gupta",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "react-library",
+    "dimension",
+    "dimension-js",
+    "dimension-react",
+    "2d animation",
+    "3d animation",
+    "animation",
+    "animation library",
+    "animation components",
+    "animation hooks",
+    "animation utils"
+  ],
   "type": "module",
   "exports": {
     ".": {

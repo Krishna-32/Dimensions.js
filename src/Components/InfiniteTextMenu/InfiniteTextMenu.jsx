@@ -18,6 +18,9 @@ import PropTypes from "prop-types";
  * @param {string} [props.titleColor="#fff"] - Color of the title text
  * @param {string} [props.width="100vw"] - Width of the menu container
  * @param {string} [props.height="100vh"] - Height of the menu container
+ * @param {string} [props.borderRadius="0"] - Border radius of the menu container
+ * @param {string} [props.subtitleFontSize="10px"] - Font size for subtitles with responsive scaling
+ * @param {string} [props.titleFontSize="20px"] - Font size for titles with responsive scaling
  * @returns {JSX.Element} A div containing the infinite scrolling menu
  * 
  * @example
@@ -30,6 +33,8 @@ import PropTypes from "prop-types";
  *   titleColor="#fff"
  *   width="100vw"
  *   height="100vh"
+ *   subtitleFontSize="10px"
+ *   titleFontSize="20px"
  * />
  */
 const InfiniteTextMenu = ({
@@ -40,6 +45,8 @@ const InfiniteTextMenu = ({
   titleColor = "#fff", 
   width = "100vw",
   height = "100vh",
+  subtitleFontSize = "",
+  titleFontSize = ""
 }) => {
   useEffect(() => {
     const menuElement = document.querySelector(".menu");
@@ -204,31 +211,12 @@ const InfiniteTextMenu = ({
             align-items: flex-end;
           }
           .item-category p {
-            font-size: 40px;
             text-transform: uppercase;
             user-select: none;
           }
           .item-name p {
-            font-size: 120px;
             line-height: 90%;
             user-select: none;
-          }
-          @media (max-width: 768px) {
-            .item-category p {
-              font-size: 40px;
-            }
-            .item-name p {
-              font-size: 80px;
-            }
-          }
-
-          @media (max-width: 480px) {
-            .item-category p {
-              font-size: 30px;
-            }
-            .item-name p {
-              font-size: 60px;
-            }
           }
         `}
       </style>
@@ -240,10 +228,10 @@ const InfiniteTextMenu = ({
           {title.map((titleItem, index) => (
             <li key={index} className="menu-item">
               <div className="item-category">
-                <p style={{ color: subtitleColor }}>{subtitle[index]}</p>
+                <p style={{ color: subtitleColor, fontSize: subtitleFontSize }}>{subtitle[index]}</p>
               </div>
               <div className="item-name">
-                <p style={{ color: titleColor }}>{titleItem}</p>
+                <p style={{ color: titleColor, fontSize: titleFontSize }}>{titleItem}</p>
               </div>
             </li>
           ))}
@@ -261,6 +249,8 @@ InfiniteTextMenu.propTypes = {
   titleColor: PropTypes.string,
   width: PropTypes.string,
   height: PropTypes.string,
+  subtitleFontSize: PropTypes.string,
+  titleFontSize: PropTypes.string,
 };
 
 export { InfiniteTextMenu };
