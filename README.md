@@ -1,8 +1,34 @@
-# React + Vite
+# Dimensions.js
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React component library featuring interactive and animated UI elements.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install dimensions-js
+```
+
+## Features
+
+- 🎨 Customizable styling with CSS-in-JS
+- 📱 Responsive design
+- 🎭 Interactive animations
+- 🔧 Easy to integrate
+- 📦 Lightweight
+
+## Requirements
+
+- React 18 or higher
+
+## License
+
+MIT © [Krishna Gupta]
+
+## Contributing
+
+Feel free to contribute to this project! If you find any issues or have suggestions for improvements, please create an issue or submit a pull request.
+
+Github Repo: [@Dimension-JS](https://github.com/Krishna-32/Dimensions.js)
+
+You can reach out to me on Instagram: [@Krix.naa](https://www.instagram.com/krix.naa/)
+
